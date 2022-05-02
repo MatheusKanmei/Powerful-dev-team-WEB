@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 30vh 70vh;
+    grid-template-areas: "header header"
+                          "aside main-content";
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.user-input{
+    border: solid 1px ;
+    width: 200px;
+    height: 30px;
+    padding: 3px;
+    margin: 0 15px 0 5px;
+}
+.followers-icon{
+    display: flex;
+    max-width: 50px;
+    max-height: 50px;
+}
+.gist-icon{
+    display: flex;
+    max-width: 25px;
+    max-height: 30px;
+    margin-left: 10px;
+}
+.main-content{
+    grid-area: main-content;
+    justify-self: start;
+}
+.flex-items{
+    display: flex;
+}
+.user-github{
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 100%;
+    
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+
+    /*border: solid 1px;*/
+}
+.user-github-info{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.avatar-photo {
+    width: 80%;
+    max-width: 250px;
+    max-height: 70%;
+    border-radius: 50%;
+    padding: 5px;
+}
+.h1-header {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.h2-user-github{
+    font-size: 28px;
+}
+#add-button{
+    width: 50px;
+    height: 50px;
+    font-size: xx-large;
+    border-radius: 50%;
+    border: solid 1px;
+
+    color: #fff;
+    background-color: mediumslateblue;
+
+    transition: transform;
+    transition-duration: 0.5s;
+}
+.click-animation{
+    animation-name: add-button;
+    animation-duration: 3s;
+
+}
+#add-button:hover{
+    transform: scale(1.20);
+}
+
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+    justify-self: start;
+
+    margin-left: 3%;
+}
+span{
+    font-family: sans-serif;
+    margin-left: 5px;
+}
